@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-size: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &.using-mouse{
+      :focus{
+        outline: none;
+      }
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+
+    &:focus{
+      outline-color: #3323b8;
+      outline-style: solid;
+      outline-width: 1px;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    @apply text-black;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    height: 100%;
+    width: 100vw;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* https://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/ */
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    cursor: pointer;
+    @apply text-black;
+    text-decoration: none;
+  }
+
+  button {
+    background: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  fieldset {
+    padding: 0;
+  }
+
+  [type=button], [type=reset], [type=submit], button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input {
+    border: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  #root{
+    @apply h-full flex flex-col min-h-screen relative;
+  }
+
+  .html.overflow-hidden {
+    position: relative;
+    overflow: hidden;
+
+    body {
+      //position: fixed;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+
+  .imageWithoutAlt{
+    &:after {
+      content: '' !important;
+    }
+  }
+
+  .inherit-all {
+    * {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
+  }
+
+  .shadow-input-focus{
+    // https://tobiasahlin.com/blog/how-to-animate-box-shadow/
+    position: relative;
+
+    &:after {
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      box-shadow: 0 0 0 1px #3323b8;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+
+  .shadow-input-focus-active:after {
+    opacity: 1;
+  }
+
+  .shadow-input-error-active:after {
+    box-shadow: 0 0 0 1px #ed1c24;
+    opacity: 1;
+  }
+}
+
+.border-spacing-0 {
+  border-spacing: 0;
+}
