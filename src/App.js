@@ -4,15 +4,20 @@ import 'styles/global.css'
 import useElasticResizer from 'utils/useElasticResizer'
 import Routes from 'pages/Routes'
 import Header from 'components/Header/Header'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 const App = () => {
   useElasticResizer()
 
   return (
-    <div>
-      <Header />
-      <Routes />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <>
+        <Header />
+        <Routes />
+      </>
+    </QueryClientProvider >
   )
 }
 

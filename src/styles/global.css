@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 @layer base {
   html {
@@ -58,8 +59,11 @@
 
   a {
     cursor: pointer;
-    @apply text-black;
     text-decoration: none;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   button {
@@ -162,7 +166,9 @@
   border-spacing: 0;
 }
 
-.wrapper {
-  width: 132rem;
-  margin: 0 auto;
+@layer components {
+  .wrapper {
+    margin: 0 auto;
+    @apply lg:w-desktop md:w-full sm:w-full sm:px-16;
+  }
 }
