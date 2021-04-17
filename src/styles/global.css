@@ -1,3 +1,5 @@
+
+@import-normalize;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,13 +19,7 @@
 
   * {
     box-sizing: border-box;
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-
-    &:focus{
-      outline-color: #3323b8;
-      outline-style: solid;
-      outline-width: 1px;
-    }
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   }
 
   body {
@@ -164,4 +160,9 @@
 
 .border-spacing-0 {
   border-spacing: 0;
+}
+
+.wrapper {
+  width: 132rem;
+  margin: 0 auto;
 }

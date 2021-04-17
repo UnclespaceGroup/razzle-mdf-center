@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+  url('/public/fonts/hinted-Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/public/fonts/hinted-Roboto-Light.woff') format('woff'), /* Modern Browsers */
+  url('/public/fonts/hinted-Roboto-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/public/fonts/hinted-Roboto-Light.svg#Roboto') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('/public/fonts/roboto-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/public/fonts/roboto-regular-webfont.woff') format('woff'), /* Modern Browsers */
+  url('/public/fonts/roboto-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/public/fonts/roboto-regular-webfont.svg#Roboto') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('/public/fonts/roboto-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/public/fonts/roboto-medium-webfont.woff') format('woff'), /* Modern Browsers */
+  url('/public/fonts/roboto-medium-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/public/fonts/roboto-medium-webfont.svg#Roboto') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('/public/fonts/roboto-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/public/fonts/roboto-bold-webfont.woff') format('woff'), /* Modern Browsers */
+  url('/public/fonts/roboto-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/public/fonts/roboto-bold-webfont.svg#Roboto') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
