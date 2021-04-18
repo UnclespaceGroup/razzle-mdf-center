@@ -18,9 +18,9 @@ const HomeServices = () => {
   return (
     <div className='wrapper' id={ANCHOR_SERVICES}>
       <h2 className='title-h2'>Услуги</h2>
-      <ul className='flex flex-wrap'>
+      <ul className='flex flex-wrap md:-mx-gutter'>
         {_.map(services, (item, key) => (
-          <li key={key} className='w-1/3 p-40 sm:w-full sm:px-0 sm:py-24'>
+          <li key={key} className='w-1/3 lg:p-40 md:p-gutter sm:w-full sm:px-0 sm:py-24'>
             <CardService {...item} />
           </li>
         ))}

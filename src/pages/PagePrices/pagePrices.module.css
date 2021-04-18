@@ -1,0 +1,37 @@
+.container {
+  h2 {
+    @apply text-32 mt-64 mb-32 font-medium;
+  }
+
+  h3 {
+    @apply text-24 mt-40 mb-24 font-medium;
+
+  }
+
+  table {
+    border-spacing: 0;
+    width: 100%;
+
+    th {
+      font-size: 1.6rem;
+      color: #828282;
+      text-align: left;
+      font-weight: 400;
+
+      &:nth-child(n + 2) {
+        text-align: right;
+      }
+    }
+
+    td {
+      @apply text-18 sm:text-14;
+      padding: 2rem 0 .5rem;
+      border-bottom: 1px solid #B9B9B9;
+
+      &:nth-child(n + 2) {
+        text-align: right;
+        width: 15%;
+      }
+    }
+  }
+}

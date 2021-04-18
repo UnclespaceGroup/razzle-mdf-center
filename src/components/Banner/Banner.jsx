@@ -26,9 +26,11 @@ const Banner = ({
         </div>
       </span>
       <div className='h-1/2 wrapper relative'>
-        <h1 className='text-72 font-medium text-white sm:text-32'>{title}</h1>
-        <div className='w-1/3 bg-red h-2 mt-8 sm:w-2/3' />
-        <div className='mt-24 text-white text-24 sm:text-18'>{text}</div>
+        <div className='w-2/3 sm:w-full'>
+          <h1 className='text-72 font-medium text-white md:text-48 sm:text-48'>{title}</h1>
+          <div className='w-1/3 bg-red h-2 mt-8 sm:w-2/3' />
+          <div className='mt-24 text-white text-24 md:text-18'>{text}</div>
+        </div>
 
         <div className='absolute right-0 w-1/3 bottom-0 text-white text-24 mb-64 sm:w-full sm:pl-16 sm:text-16'>
           <a href={contacts?.vk} target='_blank' className='flex items-center mb-8'>

@@ -149,10 +149,30 @@ button:disabled {
 @layer components {
   .wrapper {
     margin: 0 auto;
-    @apply lg:w-desktop md:w-full sm:w-full sm:px-16;
+    @apply lg:w-desktop md:w-full md:px-24 sm:w-full sm:px-16;
   }
 
   .title-h2 {
     @apply text-48 font-bold mb-40 sm:text-32;
+  }
+
+  .list {
+    li {
+      margin-bottom: 2.4rem;
+      padding-left: 2.4rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1.4rem;
+        display: inline-block;
+        width: .8rem;
+        height: .8rem;
+        border-radius: 50%;
+        background-color: #9B51E0;
+      }
+    }
   }
 }

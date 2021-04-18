@@ -5,6 +5,9 @@ import CardFacade from 'components/CardFacade/CardFacade'
 import { useQuery } from 'react-query'
 import axios from 'axios'
 import { ANCHOR_FACADES } from 'constants/anchors'
+import { Link } from 'react-router-dom'
+import { PAGE_PRICES } from 'constants/PAGES'
+import { MdArrowForward } from 'react-icons/md'
 
 const HomeFacades = () => {
 
@@ -25,6 +28,10 @@ const HomeFacades = () => {
           </li>
         ))}
       </ul>
+      <Link to={PAGE_PRICES} className='flex items-center mt-40 text-24 font-medium'>
+        Показать все цены
+        <MdArrowForward className='ml-16 text-48' />
+      </Link>
     </div>
   )
 }
