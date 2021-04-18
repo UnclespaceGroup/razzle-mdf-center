@@ -151,4 +151,8 @@ button:disabled {
     margin: 0 auto;
     @apply lg:w-desktop md:w-full sm:w-full sm:px-16;
   }
+
+  .title-h2 {
+    @apply text-48 font-bold mb-40 sm:text-32;
+  }
 }

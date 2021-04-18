@@ -5,6 +5,7 @@ import axios from 'axios'
 import { FaVk, FaPhone } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 import _ from 'lodash'
+import { ANCHOR_CONTACTS } from 'constants/anchors'
 
 const HowBuy = () => {
   const { data: contacts = {} } = useQuery(
@@ -36,16 +37,18 @@ const HowBuy = () => {
   ], [contacts])
 
   return (
-    <div className='wrapper'>
-      <h2 className='text-48 font-bold mb-40'>Для заказа свяжитесь с нами</h2>
+    <div className='wrapper' id={ANCHOR_CONTACTS}>
+      <h2 className='title-h2'>Для заказа свяжитесь с нами</h2>
       <ul>
-        {_.map(list, item => (
-          <li className='mb-40'>
+        {_.map(list, (item, key) => (
+          <li className='mb-40' key={key}>
             <a className='inline-flex items-center' href={item.link} target={item.target}>
-              {item.icon && React.createElement(item.icon, { className: 'text-48 mr-24 text-black' })}
+              <div className='w-40'>
+                {item.icon && React.createElement(item.icon, { className: 'text-48 mr-24 text-black sm:text-32' })}
+              </div>
               <h3>
-                <div className='text-18 mb-8'>{item.title}</div>
-                <div className='text-32 font-bold'>{item.value}</div>
+                <div className='text-18 mb-8 sm:text-14'>{item.title}</div>
+                <div className='text-32 font-bold sm:text-24'>{item.value}</div>
               </h3>
             </a>
           </li>
