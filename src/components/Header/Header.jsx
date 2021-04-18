@@ -37,7 +37,7 @@ const Header = () => {
         <div className='wrapper h-80 flex items-center text-24'>
           <Link className='font-bold flex items-center' to={PAGE_MAIN}>
             <img className='h-64 mr-16' src='/logo.png' />
-            Фасады сысолы
+            Фасады Сысолы
           </Link>
           <div className='flex ml-auto sm:hidden'>
             <button onClick={handleClick} value={ANCHOR_FACADES} className='mx-16 inline-block font-medium md:hidden '>фасады</button>
