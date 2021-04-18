@@ -43,6 +43,7 @@ module.exports = {
       500: '50rem',
       400: '40rem',
       360: '36rem',
+      200: '20rem',
       120: '12rem',
       80: '8rem',
       64: '6.4rem'
