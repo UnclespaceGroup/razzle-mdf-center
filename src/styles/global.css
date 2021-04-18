@@ -132,38 +132,18 @@
       color: inherit;
     }
   }
-
-  .shadow-input-focus{
-    // https://tobiasahlin.com/blog/how-to-animate-box-shadow/
-    position: relative;
-
-    &:after {
-      content: '';
-      pointer-events: none;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 4px;
-      box-shadow: 0 0 0 1px #3323b8;
-      opacity: 0;
-      transition: opacity 0.2s ease-in-out;
-    }
-  }
-
-  .shadow-input-focus-active:after {
-    opacity: 1;
-  }
-
-  .shadow-input-error-active:after {
-    box-shadow: 0 0 0 1px #ed1c24;
-    opacity: 1;
-  }
 }
 
 .border-spacing-0 {
   border-spacing: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  opacity: .3;
 }
 
 @layer components {

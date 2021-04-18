@@ -20,10 +20,12 @@ const Banner = ({
   return (
     <BgImage image={image}>
     <div className='flex flex-col justify-between h-screen' style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.108083) 35.21%, rgba(0, 0, 0, 0.86) 100%)' }}>
-      <div className='h-64 flex justify-between items-center wrapper text-18 text-white sm:text-16 sm:flex-col sm:justify-center sm:items-start'>
-        <div>{topLeft}</div>
-        <div>{topRight}</div>
-      </div>
+      <span>
+        <div className='sm:hidden h-64 flex justify-between items-center wrapper text-18 text-white sm:text-16 sm:flex-col sm:justify-center sm:items-start'>
+          <div>{topLeft}</div>
+          <div>{topRight}</div>
+        </div>
+      </span>
       <div className='h-1/2 wrapper relative'>
         <h1 className='text-72 font-medium text-white sm:text-32'>{title}</h1>
         <div className='w-1/3 bg-red h-2 mt-8 sm:w-2/3' />

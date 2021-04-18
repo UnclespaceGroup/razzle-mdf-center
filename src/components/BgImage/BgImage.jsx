@@ -1,9 +1,13 @@
 // packages
 import React from 'react'
+import cn from 'classnames'
 
-const BgImage = ({ image, children }) => {
+const BgImage = ({ image, children, className }) => {
   return (
-    <div className='bg-center bg-no-repeat bg-cover' style={{ backgroundImage: `url(${image})` }}>
+    <div
+      className={cn('bg-center bg-no-repeat bg-cover', className)}
+      style={{ backgroundImage: `url(${image})` }}
+    >
       {children}
     </div>
   )
