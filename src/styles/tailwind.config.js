@@ -6,7 +6,7 @@ module.exports = {
       'black40a': 'rgba(0, 0, 0, 0.4)',
       'grayLight': '#ababab',
       'red': '#FC0000',
-      'black': 'black',
+      'black': '#333333',
       'white': '#FFFFFF'
     },
     spacing: {

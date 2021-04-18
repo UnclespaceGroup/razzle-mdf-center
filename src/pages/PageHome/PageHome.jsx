@@ -6,6 +6,7 @@ import Banner from 'components/Banner/Banner'
 import BigSlider from 'components/BigSlider/BigSlider'
 import HomeFacades from 'pages/PageHome/HomeFacades/HomeFacades'
 import HomeServices from 'pages/PageHome/HomeServices/HomeServices'
+import HowBuy from 'components/HowBuy/HowBuy'
 
 const PageHome = () => {
   const { data: banner } = useQuery(
@@ -28,6 +29,7 @@ const PageHome = () => {
       <HomeFacades />
       <BigSlider slides={slides} />
       <HomeServices />
+      <HowBuy />
     </div>
   )
 }

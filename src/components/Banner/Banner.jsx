@@ -7,7 +7,6 @@ import { FaInstagram, FaVk } from 'react-icons/fa'
 
 const Banner = ({
   topLeft,
-  topRight,
   image,
   title,
   text
@@ -23,7 +22,7 @@ const Banner = ({
       <span>
         <div className='sm:hidden h-64 flex justify-between items-center wrapper text-18 text-white sm:text-16 sm:flex-col sm:justify-center sm:items-start'>
           <div>{topLeft}</div>
-          <div>{topRight}</div>
+          <div>{contacts?.address}</div>
         </div>
       </span>
       <div className='h-1/2 wrapper relative'>

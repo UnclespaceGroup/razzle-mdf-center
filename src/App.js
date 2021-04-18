@@ -5,6 +5,7 @@ import useElasticResizer from 'utils/useElasticResizer'
 import Routes from 'pages/Routes'
 import Header from 'components/Header/Header'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import Footer from 'components/Footer/Footer'
 
 const queryClient = new QueryClient()
 
@@ -16,6 +17,7 @@ const App = () => {
       <>
         <Header />
         <Routes />
+        <Footer />
       </>
     </QueryClientProvider >
   )
