@@ -1,16 +1,16 @@
 [
   {
-    "image": "https://img.icons8.com/ios/452/guarantee--v1.png",
+    "image": "/images/icons/icons8-time-100.png",
     "title": "Сделаем быстро",
     "text": "Срок изготовления фасадов - от 9 дней"
   },
   {
-    "image": "https://img.icons8.com/ios/452/guarantee--v1.png",
+    "image": "/images/icons/icons8-free-shipping-100.png",
     "title": "Бесплатная доставка",
     "text": "В пределах города Сыктывкар"
   },
   {
-    "image": "https://img.icons8.com/ios/452/guarantee--v1.png",
+    "image": "/images/icons/icons8-guarantee-100.png",
     "title": "Гарантия - 2 года",
     "text": ""
   }

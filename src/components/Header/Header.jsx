@@ -5,6 +5,8 @@ import { ANCHOR_CONTACTS, ANCHOR_FACADES, ANCHOR_SERVICES } from 'constants/anch
 import { scrollWindowTo } from 'utils/scrollWindowTo'
 import { Link } from 'react-router-dom'
 import { PAGE_MAIN, PAGE_PRICES } from 'constants/PAGES'
+import { useQuery } from 'react-query'
+import axios from 'axios'
 
 const scroll = () => {
   const scrollTop = window.scrollY
@@ -31,6 +33,11 @@ const Header = () => {
     }
   }, [])
 
+  const { data: contacts } = useQuery('contacts', async () => {
+    const { data } = await axios.get('api/contacts.json')
+    return data
+  })
+
   return (
     <div className='z-50 absolute left-0 top-0 w-full mt-64'>
        <div id='header' className='sm:fixed bg-white top-0 left-0 w-screen border-solid border-grayLight border-0 border-t-1 border-b-1'>
@@ -40,11 +47,11 @@ const Header = () => {
             Фасады Сысолы
           </Link>
           <div className='flex ml-auto sm:hidden'>
-            <button onClick={handleClick} value={ANCHOR_FACADES} className='mx-16 inline-block font-medium md:hidden '>фасады</button>
-            <button onClick={handleClick} value={ANCHOR_SERVICES} className='mx-16 inline-block font-medium md:hidden '>услуги</button>
-            <button onClick={handleClick} value={ANCHOR_CONTACTS} className='mx-16 inline-block font-medium md:hidden '>как заказать</button>
+            <button onClick={handleClick} value={ANCHOR_FACADES} className='link mx-16 inline-block font-medium md:hidden '>фасады</button>
+            <button onClick={handleClick} value={ANCHOR_SERVICES} className='link mx-16 inline-block font-medium md:hidden '>услуги</button>
+            <button onClick={handleClick} value={ANCHOR_CONTACTS} className='link mx-16 inline-block font-medium md:hidden '>как заказать</button>
             <Link to={PAGE_PRICES} className='mx-16 inline-block font-medium'>цены</Link>
-            <a className='mx-16 inline-block font-medium' href='/'>8 800 700 24 24</a>
+            <a className='mx-16 inline-block font-medium' href={`tel:${contacts?.phone}`}>{contacts?.phone}</a>
           </div>
         </div>
        </div>

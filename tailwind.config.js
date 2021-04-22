@@ -5,7 +5,9 @@ module.exports = {
     colors: {
       'black40a': 'rgba(0, 0, 0, 0.4)',
       'grayLight': '#ababab',
+      'gray': '#4F4F4F',
       'red': '#FC0000',
+      'blackSolid': '#000',
       'black': '#333333',
       'white': '#FFFFFF'
     },
@@ -13,6 +15,8 @@ module.exports = {
       'gutter': '1.6rem',
       '1/2': '50%',
       '1/3': '33.33%',
+      300: '30rem',
+      240: '24rem',
       200: '20rem',
       160: '16rem',
       100: '10rem',

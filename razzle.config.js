@@ -34,7 +34,7 @@ module.exports = {
                 postcssNested,
                 postcssNormalize,
                 postcssSimpleVars,
-                tailwindcss('src/styles/tailwind.config.js'),
+                tailwindcss('tailwind.config.js'),
                 postcssFlexboxFixes(),
                 postcssCsso()
               ],

@@ -41,7 +41,7 @@ const BigSlider = ({ slides }) => {
   return (
     <div className='relative'>
       <div className='absolute z-10 right-0 bottom-0 pb-64 pr-64 sm:top-0 sm:bottom-auto sm:p-0 sm:mt-16 sm:mr-24'>
-        <div className='flex justify-end text-48'>
+        <div className='flex justify-end text-48 text-blackSolid'>
           <button disabled={selectedSlideIndex === 0} onClick={handleClickPrev} className='mr-24'>
             <MdArrowBack />
           </button>
@@ -50,17 +50,17 @@ const BigSlider = ({ slides }) => {
           </button>
         </div>
       </div>
-      <div ref={emblaRef} className='overflow-hidden'>
+      <div ref={emblaRef} className='overflow-hidden bg-gray'>
         <div className='flex w-full'>
           {_.map(slides, (slide, key) => (
             <div className='flex-0-0-auto w-full' key={key}>
               <BgImage
-                className='w-full h-600 flex flex-col justify-end sm:h-400'
+                className='w-full h-700 flex flex-col justify-end sm:h-400 bg-contain bg-center'
                 image={slide?.image}
               >
                 <div className='wrapper pb-64 text-white'>
-                  <h2 className='text-32 font-medium'>{slide?.title}</h2>
-                  <div className='text-18 mt-16'>{slide?.text}</div>
+                  <h2 className='text-32 font-medium text-shadow'>{slide?.title}</h2>
+                  <div className='text-18 mt-16 text-shadow'>{slide?.text}</div>
                 </div>
               </BgImage>
             </div>

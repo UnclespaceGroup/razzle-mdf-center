@@ -1,15 +1,27 @@
 [
   {
-    "image": "/images/facades/banner-1.jpg",
-    "title": "Фасад прямой",
-    "text": "sdjfnkvhsdnvkjdsnc dskjc nsdkjn  jdsnc ksdn kjndskj"
+    "image": "/images/slides/slide-gray-facades.jpg",
+    "title": "Кухня из MDF фасадов",
+    "text": ""
   },
   {
-    "image": "/images/facades/banner-1.jpg",
-    "title": "Фасад прямой"
+    "image": "/images/slides/slide-gray-2.jpg",
+    "title": "Фасады с интегрированной ручкой"
   },
   {
-    "image": "/images/facades/banner-1.jpg",
-    "title": "Фасад прямой"
+    "image": "/images/slides/slide-gray-3.jpg",
+    "title": "Белые глянцевые фасады"
+  },
+  {
+    "image": "/images/slides/slide-gray-4.jpg",
+    "title": "Кухня с радиусными фасадами"
+  },
+  {
+    "image": "/images/slides/slide-1.jpg",
+    "title": "Светлые радиусные фасады"
+  },
+  {
+    "image": "/images/slides/slide-2.jpg",
+    "title": "Покраска пластиковой детали"
   }
 ]
