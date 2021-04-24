@@ -1,9 +1,27 @@
-
 @import-normalize;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+html {
+  font-size: 10px;
+  @media screen and (min-width: 1600px) {
+    font-size: calc(100vw / 2000 * 10);
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1600px){
+    font-size: calc(100vw / 1600 * 10);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    font-size: calc(100vw / 1200 * 10);
+  }
+
+  @media screen and (max-width: 767px){
+    font-size: calc(100vw / 460 * 10);
+  }
+}
 
 @layer base {
   html {
@@ -11,8 +29,8 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    &.using-mouse{
-      :focus{
+    &.using-mouse {
+      :focus {
         outline: none;
       }
     }
@@ -74,7 +92,7 @@
     padding: 0;
   }
 
-  [type=button], [type=reset], [type=submit], button{
+  [type=button], [type=reset], [type=submit], button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -98,7 +116,7 @@
     pointer-events: none;
   }
 
-  #root{
+  #root {
     @apply h-full flex flex-col min-h-screen relative;
   }
 
@@ -107,14 +125,13 @@
     overflow: hidden;
 
     body {
-      //position: fixed;
-      height: 100%;
+    //position: fixed; height: 100%;
       overflow: hidden;
       width: 100%;
     }
   }
 
-  .imageWithoutAlt{
+  .imageWithoutAlt {
     &:after {
       content: '' !important;
     }
@@ -154,6 +171,7 @@ button:disabled {
 
   .link {
     transition: opacity 100ms ease-in;
+
     &:hover {
       opacity: .5;
     }

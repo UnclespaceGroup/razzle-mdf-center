@@ -58,9 +58,9 @@ const BigSlider = ({ slides }) => {
                 className='w-full h-700 flex flex-col justify-end sm:h-400 bg-contain bg-center'
                 image={slide?.image}
               >
-                <div className='wrapper pb-64 text-white'>
-                  <h2 className='text-32 font-medium text-shadow'>{slide?.title}</h2>
-                  <div className='text-18 mt-16 text-shadow'>{slide?.text}</div>
+                <div className='wrapper pb-64 text-white overflow-hidden'>
+                  <h2 className='text-32 font-medium text-shadow sm:text-18'>{slide?.title}</h2>
+                  <div className='text-18 mt-16 text-shadow sm:text-14'>{slide?.text}</div>
                 </div>
               </BgImage>
             </div>

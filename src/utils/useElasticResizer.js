@@ -32,6 +32,7 @@ export const onResize = () => {
   }
 
   var curFontSize = Math.round((width / baseWidth * baseSize) * 100) / 100;
+  console.log(curFontSize)
   html.style.fontSize = curFontSize + 'px';
 }
 

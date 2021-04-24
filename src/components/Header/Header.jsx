@@ -11,11 +11,13 @@ import axios from 'axios'
 const scroll = () => {
   const scrollTop = window.scrollY
   const el = document.getElementById('header')
+  if (document.documentElement.clientWidth >= 768) {
 
-  if (scrollTop > 64) {
-    el.classList.add('fixed')
-  } else if (scrollTop < 64) {
-    el.classList.remove('fixed')
+    if (scrollTop > 64) {
+      el.classList.add('fixed')
+    } else if (scrollTop < 64) {
+      el.classList.remove('fixed')
+    }
   }
 }
 
@@ -26,8 +28,7 @@ const handleClick = e => {
 
 const Header = () => {
   useEffect(() => {
-    window.addEventListener('scroll', scroll)
-
+      window.addEventListener('scroll', scroll)
     return () => {
       window.removeEventListener('scroll', scroll)
     }

@@ -43,9 +43,7 @@ server
         <meta charset="utf-8" />
         <title>Фасады Сысолы - фабрика производства мебельных фасадов</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-                <script>
-          import { onResize } from 'utils/useElasticResizer' 
-onResize()
+        <script>
         </script>
         ${cssLinksFromAssets(assets, 'client')}
     </head>
