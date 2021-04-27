@@ -3,7 +3,7 @@ import React from 'react'
 import BgImage from 'components/BgImage/BgImage'
 import { useQuery } from 'react-query'
 import axios from 'axios'
-import { FaInstagram, FaVk } from 'react-icons/fa'
+import { FaInstagram, FaVk, FaWhatsapp } from 'react-icons/fa'
 
 const Banner = ({
   topLeft,
@@ -37,9 +37,13 @@ const Banner = ({
             <FaVk className='text-32 mr-8' />
             {contacts?.vk}
           </a>
-          <a href={contacts?.instagram} target='_blank' className='flex items-center'>
+          <a href={contacts?.instagram} target='_blank' className='flex items-center mb-8'>
             <FaInstagram className='text-32 mr-8' />
             {contacts?.instagram}
+          </a>
+          <a href={contacts?.instagram} target='_blank' className='flex items-center'>
+            <FaWhatsapp className='text-32 mr-8' />
+            {contacts?.whatsapp}
           </a>
         </div>
       </div>
